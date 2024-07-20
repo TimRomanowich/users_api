@@ -7,7 +7,7 @@ from rest_framework.test import APIClient
 class UserRegistrationTestCase(TestCase):
     def setUp(self):
         self.client = APIClient()
-        self.register_url = reverse('api-register')  # Make sure this name matches your URL pattern
+        self.register_url = reverse('api-register')  
 
     def test_user_registration(self):
         data = {
